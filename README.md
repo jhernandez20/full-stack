@@ -1,6 +1,6 @@
 # Full staca
 
-This project  is published as part of a test for reign company.
+This project  is published as part of a test for U Mayoe company.
 
 ## Before using in your environment local
 
