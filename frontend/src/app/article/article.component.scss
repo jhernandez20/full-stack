@@ -1,0 +1,24 @@
+  .article-list-item {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .article-list-item:hover {
+    background-color: #fafafa;
+  }
+
+  .article-list-item .title{
+    color: #333;
+    font-size: 13pt;
+  }
+
+  .article-list-item .author{
+    color: #999;
+    font-size: 13pt;
+  }
+  
+  .article-list-item .date{
+    color: #333;
+    padding-right: 3em;
+    float: right;
+  }

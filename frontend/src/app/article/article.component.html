@@ -1,0 +1,17 @@
+<app-header></app-header>
+<mat-card>
+    <mat-progress-bar mode="indeterminate" *ngIf="isCompleted"></mat-progress-bar>
+    <mat-nav-list>
+        <span *ngFor="let article of articles; let i index">
+            <mat-list-item class="article-list-item" (mouseenter)="enter(i)" (mouseleave)="leave(i)">
+                <a matLine (click)="openlink(article.story_url)">
+                    <span class="title">{{ article.title ? article.title : article.story_title  }} </span>
+                    <span class="author">- {{article.author}} -</span>
+                    <span class="date">{{article.created_at | formatDate}}</span></a>
+                <span *ngIf="hoverIndex == i" (click)="deleteArticle(article)">
+                    <mat-icon aria-hidden="false" >delete</mat-icon>
+                </span>
+            </mat-list-item>
+        </span>
+    </mat-nav-list>
+</mat-card>
