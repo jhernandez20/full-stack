@@ -1,0 +1,25 @@
+{
+  "name": "hacker-news-backend",
+  "version": "1.0.0",
+  "description": "Api restful de el proyecto de prueba de Reign.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha"
+  },
+  "author": "Jorge Hernández",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "moment": "^2.26.0",
+    "mongoose": "^5.9.19",
+    "node-cron": "^2.0.3"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1",
+    "nodemon": "^2.0.4",
+    "request": "^2.88.2"
+  }
+}

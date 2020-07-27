@@ -1,18 +1,18 @@
 version: '3.8'
 services:
   server:
-    container_name: backend
+    container_name: hacker-news-backend
     restart: always
-    build: backend/.
+    build: hacker-news-backend/.
     ports:
       - '3789:3789'
     links:
       - mongo
   client:
     hostname: localhost
-    container_name: frontend
+    container_name: hacker-news-frontend
     restart: always
-    build: frontend/.
+    build: hacker-news-frontend/.
     ports:
       - '4200:4200'
     links: 
