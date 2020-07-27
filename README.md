@@ -1,6 +1,6 @@
 # Full staca
 
-This project  is published as part of a test for U Mayoe company.
+This project  is published as part of a test for strengthen knowledge Full Stack By George.
 
 ## Before using in your environment local
 
