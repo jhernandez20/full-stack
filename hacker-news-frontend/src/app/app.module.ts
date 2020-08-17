@@ -16,6 +16,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FormatDatePipe } from './shared/pipes/format-date.pipe';
 import { PageNotFoundComponent } from './shared/components/page-not-found/page-not-found.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { PageNotFoundComponent } from './shared/components/page-not-found/page-n
     ArticleComponent,
     HeaderComponent,
     FormatDatePipe,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
