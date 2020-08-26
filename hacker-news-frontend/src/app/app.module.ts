@@ -14,9 +14,15 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { FormatDatePipe } from './shared/pipes/format-date.pipe';
 import { PageNotFoundComponent } from './shared/components/page-not-found/page-not-found.component';
 import { LoginComponent } from './login/login.component';
+import { UserCreateComponent } from './users/user-create/user-create.component';
+import { UsersModule } from './users/users.module';
 
 
 @NgModule({
@@ -26,7 +32,8 @@ import { LoginComponent } from './login/login.component';
     HeaderComponent,
     FormatDatePipe,
     PageNotFoundComponent,
-    LoginComponent
+    LoginComponent,
+    UserCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +46,12 @@ import { LoginComponent } from './login/login.component';
     MatCardModule,
     MatToolbarModule,
     MatProgressBarModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    MatProgressSpinnerModule,
+    UsersModule
   ],
   providers: [],
   bootstrap: [AppComponent],

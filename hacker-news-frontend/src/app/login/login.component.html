@@ -1,1 +1,27 @@
-<p>login works!</p>
+<section class="container">
+    <h1>Image fondo</h1>
+    <mat-spinner class=""  color="accent"  mode="indeterminate" *ngIf="isCompleted"></mat-spinner>
+    <mat-card class="box">
+        <mat-card-title> Login </mat-card-title>
+        <mat-icon aria-hidden="false" aria-label="Example account_circle icon">account_circle</mat-icon>
+        <mat-card-content>
+            <form class="example-form">
+                <mat-card-content>
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Usuario">
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <input matInput type="password" placeholder="Contraseña">
+                    </mat-form-field>
+                </mat-card-content>
+                <button mat-raised-button color="primary" class="btn-block" (click)="login()">Login</button>
+            </form>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button>Recuperar contraseña</button>
+            <button mat-button (click)="register()">Registrate</button>
+        </mat-card-actions>
+        <mat-card-footer>Texto para redactar
+        </mat-card-footer>
+    </mat-card>
+</section>
